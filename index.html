@@ -36,18 +36,46 @@
       <time>28.11.2020 06:00</time>
     </div>
     <hr />
-    <br />
     <form action="">
+      <label for="">Tекст</label>
       <input type="text" placeholder="введіть текст" />
-      <input type="button" style="display: block" />
-      <br />
+      <label for="">Чекбокс 1</label>
       <input type="checkbox" />
+      <label for="">Чекбокс 2</label>
       <input type="checkbox" />
-      <br />
+
+      <label for="">радіо 1</label>
       <input type="radio" />
+      <label for="">радіо 2</label>
       <input type="radio" />
-      <br />
-      <textarea name="" id="" cols="30" rows="10" style="display: block"></textarea>
+
+      <label for="">Час</label>
+      <input type="time" />
+      <label for="">Дата та час</label>
+      <input type="datetime-local" />
+
+      <label for="">введіть пароль</label>
+      <input type="password" />
+
+      <input type="file" />
+      <label for=""> ползунок</label>
+      <input type="range" />
+      <label for="">Отправка форми</label>
+      <input type="submit" value="Отправить" />
+      <textarea name="" id="" cols="30" rows="10" placeholder="текстове поле"></textarea>
     </form>
+    <style>
+      input {
+        display: block;
+        margin-top: 10px;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+      }
+      textarea {
+        margin-top: 15px;
+      }
+    </style>
   </body>
 </html>
