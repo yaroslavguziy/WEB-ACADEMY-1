@@ -53,6 +53,14 @@
       </section>
 
       <form action="">
+        <label for="3">Ваш email</label>
+        <input id="3" type="email" placeholder="Введіть email" />
+
+        <label for="4">введіть пароль</label>
+        <input id="4" type="password" placeholder="введіть пароль" />
+
+        <input type="button" value="Ввійти" />
+
         <label for=""> Введіть Tекст</label>
 
         <input type="text" placeholder="введіть текст" />
@@ -74,15 +82,17 @@
         <label for="">Дата та час</label>
         <input type="datetime-local" />
 
-        <label for="">введіть пароль</label>
-        <input type="password" />
-
         <input type="file" />
 
         <label for=""> ползунок</label>
         <input type="range" />
 
-        <label for="">Отправка форми</label>
+        <label for="1"> Ваше ім'я</label>
+        <input id="1" type="text" placeholder="введіть ім'я" />
+
+        <label for="2">Ваш телефон</label>
+        <input id="2" type="number" placeholder="введіть телефон" />
+
         <input type="submit" value="Отправить" />
 
         <textarea name="" id="" cols="30" rows="10" placeholder="текстове поле"></textarea>
@@ -99,9 +109,9 @@
 
       <ol>
         Список нумерований
-        <li>Перший</li>
-        <li>Другий</li>
-        <li>Трутій</li>
+        <li><data value="1">Перший</data></li>
+        <li><data value="2">Другий</data></li>
+        <li><data value="3">Третій</data></li>
       </ol>
 
       <dl>
@@ -117,7 +127,10 @@
       </dl>
     </main>
 
-    <detail></detail>
+    <details>
+      <summary>Some information</summary>
+      <p>more info about something</p>
+    </details>
     <aside></aside>
 
     <hr />
@@ -173,6 +186,17 @@
     </footer>
 
     <style>
+      details {
+        width: 150px;
+        outline: none;
+        border: 1px solid #000;
+      }
+      details[open] p {
+        padding-left: 20px;
+      }
+      body {
+        padding-left: 15px;
+      }
       input {
         display: block;
         margin-top: 10px;
