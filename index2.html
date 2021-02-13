@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
     <title>Homework 2</title>
   </head>
@@ -25,7 +27,7 @@
           </ul>
         </nav>
       </aside>
-      <div class="container">
+      <main class="main">
         <div class="pictures">
           <img src="https://picsum.photos/300/400/?=q2" alt="" />
           <img src="https://picsum.photos/300/400/?=q3" alt="" />
@@ -61,7 +63,42 @@
             </ul>
           </nav>
         </div>
-      </div>
+        <section class="about">
+          <div class="container">
+            <h2 class="about__title">About me</h2>
+            <img src="https://picsum.photos/300/400/?=q0" alt="" class="about__img" />
+            <h3 class="about__name">Yaroslav Guziy</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, magnam officiis nemo maxime odio velit quae,
+              placeat recusandae aliquid accusantium illum excepturi architecto iste mollitia corporis voluptates
+              consectetur quos cumque tempora quaerat? Quis distinctio, unde esse, illo laboriosam suscipit
+              necessitatibus saepe placeat nisi cum, totam beatae asperiores sint eum repudiandae.
+            </p>
+            <span class="about__email">mail: yaroslavguziy@gmail.com</span>
+            <span class="about__phone">tel: 0633187812</span>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="container">
+            <h3 class="skills__title">Technical Skills</h3>
+            <div class="skills__items">
+              <div class="skills__item">
+                <div class="skills__name">Photography</div>
+                <div class="skills__percentage skills__percentage-1">95%</div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__name">Web Design</div>
+                <div class="skills__percentage skills__percentage-2">85%</div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__name">Photoshop</div>
+                <div class="skills__percentage skills__percentage-3">80%</div>
+              </div>
+            </div>
+            <button class="skills__button" name="Download Resume">Download Resume</button>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

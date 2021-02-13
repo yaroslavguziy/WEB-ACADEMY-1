@@ -1,6 +1,15 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #ccc;
   margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .top {
   display: flex;
@@ -39,6 +48,9 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.pictures img {
+  width: 33%;
+}
 
 .pagination {
   padding: 50px 0;
@@ -64,4 +76,122 @@ body {
 .pagenav__link:hover {
   background-color: #000;
   color: white;
+}
+
+.about {
+  background-color: grey;
+  padding: 30px 0;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.about__title {
+  text-align: center;
+  margin: 0;
+}
+.about__img {
+  margin-top: 50px;
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+}
+.about__name {
+  margin-top: 30px;
+}
+.about__text {
+  margin-top: 15px;
+  text-align: justify;
+}
+.about__email {
+  display: block;
+  margin-top: 15px;
+}
+.about__phone {
+  display: block;
+  margin-top: 15px;
+}
+
+.skills {
+  background-color: grey;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+}
+
+.skills__title {
+  text-align: center;
+}
+.skills__items {
+  margin-top: 15px;
+}
+.skills__item {
+  margin-top: 15px;
+}
+.skills__name {
+}
+.skills__percentage {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+  padding: 5px 0;
+  position: relative;
+}
+.skills__percentage-1::before {
+  content: '95%';
+  color: #000;
+  text-align: center;
+  display: block;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  background-color: #ccc;
+  z-index: 5;
+}
+.skills__percentage-2::before {
+  content: '85%';
+  color: #000;
+  text-align: center;
+  display: block;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  background-color: #ccc;
+  z-index: 5;
+}
+
+.skills__percentage-3::before {
+  content: '80%';
+  color: #000;
+  text-align: center;
+  display: block;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  background-color: #ccc;
+  z-index: 5;
+}
+.skills__button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  background-color: #ccc;
+  transition: all 1s;
+}
+.skills__button:hover {
+  background-color: #000;
+  color: #ccc;
 }
